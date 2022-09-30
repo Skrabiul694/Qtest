@@ -63,5 +63,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 # HOW TO GET STARTED WITH QTEST
 ## REQUIREMENTS
+
+### PHP
+>=7.4
 ## FIRST STEP
 ## THINGS TO CHANGE
