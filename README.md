@@ -65,6 +65,35 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## REQUIREMENTS
 
 ### PHP
+QTest works on both Apache and NGINX
 >=7.4
+OpenSSL PHP Extension
+PDO PHP Extension
+Mbstring PHP Extension
+Tokenizer PHP Extension
+XML PHP Extension
+Ctype PHP Extension
+JSON PHP Extension
+ZIP PHP Extension
+FileInfo PHP Extension
+BCMath PHP Extension
+GD PHP Extension
+
+### MySQL
+ QTest requires a MySQL database with support for JSON columns. MySQL 5.7.24 is recommended.
+ 
+ ### SMTP Mail Configuration
+ The application MUST HAVE a working SMTP configuration for user registration and password resets. Without it, you will get an error 500 on registration.
+
 ## FIRST STEP
-## THINGS TO CHANGE
+
+1. Clone The Repo in a Folder
+2. Run "composer install" and "composer update" on Command Prompt inside the folder to install dependencies
+3. Set up the .env file with the APP_URL and Database Credentials
+4. Then again open Command Prompt and run "php artisan migrate" to migrate the tables in the database. (note: database credentials should be mentioned in the .env file before it.)
+5. Then run "php artisan db:seed" to seed the data onto the tables.
+
+## Admin access
+
+Username / email = admin
+Password = password
